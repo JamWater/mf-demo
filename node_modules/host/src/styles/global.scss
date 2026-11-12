@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+// 全局主题变量
+:root {
+  --primary-color: #1677ff;
+}

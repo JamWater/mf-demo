@@ -1,0 +1,25 @@
+{
+  "name": "mf-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "host",
+    "remote",
+    "remote-order",
+    "remote-report",
+    "common",
+    "shared"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @mf-demo/shared",
+    "predev": "npm run build:shared",
+    "dev": "concurrently -n host,remote,order,common,report -c blue,magenta,yellow,green,cyan \"npm run dev -w host\" \"npm run dev -w remote\" \"npm run dev -w remote-order\" \"npm run dev -w common\" \"npm run dev -w remote-report\"",
+    "dev:host": "npm run dev -w host",
+    "dev:remote": "npm run dev -w remote",
+    "dev:order": "npm run dev -w remote-order",
+    "dev:common": "npm run dev -w common"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

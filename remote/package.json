@@ -1,0 +1,32 @@
+{
+  "name": "remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^7.18.5",
+    "zustand": "^5.0.16",
+    "@mf-demo/shared": "*"
+  },
+  "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^2.9.2",
+    "@rsbuild/core": "^2.3.0",
+    "@rsbuild/plugin-react": "^2.1.1",
+    "@rsbuild/plugin-sass": "^2.0.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.3.3"
+  }
+}

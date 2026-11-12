@@ -1,0 +1,5 @@
+[
+  { "name": "remote", "entry": "http://localhost:3001/remoteEntry.js" },
+  { "name": "remoteOrder", "entry": "http://localhost:3002/remoteEntry.js" },
+  { "name": "remoteReport", "entry": "http://localhost:3004/remoteEntry.js" }
+]
